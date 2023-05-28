@@ -30,4 +30,4 @@ api.add_resource(EmpleadosController,'/empleados','/empleados/<string:parametros
 
 if __name__ == '__main__':
 
-    app.run(debug=True)
+    #app.run(debug=True)
