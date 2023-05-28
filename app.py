@@ -24,10 +24,3 @@ api.add_resource(AreaController,'/area','/area/<int:id>')
 api.add_resource(AreasController,'/areas')
 api.add_resource(EmpleadoController,'/empleado')
 api.add_resource(EmpleadosController,'/empleados','/empleados/<string:parametros>')
-
-
-
-
-if __name__ == '__main__':
-
-    #app.run(debug=True)
