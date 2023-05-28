@@ -1,5 +1,6 @@
 from flask import Flask
 from db import conexion
+from flask import Flask
 from flask_restful import Api
 from flask_migrate import Migrate
 from models.model_area import AreaModel
@@ -24,3 +25,6 @@ api.add_resource(AreaController,'/area','/area/<int:id>')
 api.add_resource(AreasController,'/areas')
 api.add_resource(EmpleadoController,'/empleado')
 api.add_resource(EmpleadosController,'/empleados','/empleados/<string:parametros>')
+
+
+
