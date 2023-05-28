@@ -9,6 +9,7 @@ from controller.area_controller import AreaController
 from controller.areasController import AreasController
 from controller.empleado_controller import EmpleadoController
 from controller.empleados_controller import EmpleadosController
+from controller.initial_controller import create_app
 from os import environ
 from dotenv import load_dotenv
 
@@ -25,6 +26,8 @@ api.add_resource(AreaController,'/area','/area/<int:id>')
 api.add_resource(AreasController,'/areas')
 api.add_resource(EmpleadoController,'/empleado')
 api.add_resource(EmpleadosController,'/empleados','/empleados/<string:parametros>')
+api.add_resource(create_app,'/initial')
+
 
 
 
