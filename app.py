@@ -26,6 +26,10 @@ api.add_resource(AreasController,'/areas')
 api.add_resource(EmpleadoController,'/empleado')
 api.add_resource(EmpleadosController,'/empleados','/empleados/<string:parametros>')
 
+@app.before_request
+def inicial():
+    conexion.create_all()
+
 
 
 
